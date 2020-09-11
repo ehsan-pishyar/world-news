@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutMePage"
+    android:background="@android:color/holo_blue_bright">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/frame_about_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/image_about"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="@+id/about_layout"
+        app:layout_constraintBottom_toTopOf="@+id/about_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/frame_about_image">
+
+        <com.rishabhharit.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/ehsan_pishyar"
+            app:roundedCorners="all"
+            app:cornerRadius="50dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_name_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ehsanpishyar"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:fontFamily="@font/merriweather"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/image_about"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_email_about"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="@string/e_mail"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/libre_franklin"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_name_about"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_email_content_about"/>
+
+    <TextView
+        android:id="@+id/text_email_content_about"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="@string/email"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/libre_franklin"
+        app:layout_constraintTop_toTopOf="@+id/text_email_about"
+        app:layout_constraintBottom_toBottomOf="@+id/text_email_about"
+        app:layout_constraintStart_toEndOf="@+id/text_email_about"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_instagram_about"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="@string/instagram"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/libre_franklin"
+        app:layout_constraintTop_toBottomOf="@+id/text_email_about"
+        app:layout_constraintEnd_toEndOf="@+id/text_email_about"/>
+
+    <TextView
+        android:id="@+id/text_instagram_content_about"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="@string/ehsan_pishyar"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/libre_franklin"
+        app:layout_constraintTop_toTopOf="@+id/text_instagram_about"
+        app:layout_constraintStart_toStartOf="@+id/text_email_content_about"
+        app:layout_constraintBottom_toBottomOf="@+id/text_instagram_about"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newsapi_org"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

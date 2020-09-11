@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomBottomBarText">
+
+        <item name="textAllCaps">true</item>
+        <item name="fontFamily">@font/merriweather</item>
+        <item name="android:autoSizeMaxTextSize">15sp</item>
+        <item name="android:autoSizeMinTextSize">5sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+
+    </style>
+</resources>
